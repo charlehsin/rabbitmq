@@ -1,16 +1,18 @@
-# Tutorial for work queue with multiple workers
+# Tutorial for publisher and subscriber by using Fanout exchange
 
-This is to deliver 1 message to 1 consumer.
+This is to deliver 1 message to multiple consumers by using Fanout exchange. Concept of "Exchange" is introduced at this tutorial.
 
 1. Make sure that the RabbigMQ server is up and running. See [step 1 tutorial](../step1-install-server/README.md).
 2. Install the target .NET SDK or Runtime from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0). After installation, run "dotnet --info" to verify.
-3. Read [Competing Consumers pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/CompetingConsumers.html).
-4. Follow [Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-dotnet.html).
+3. Follow [Publish/Subscribe](https://www.rabbitmq.com/tutorials/tutorial-three-dotnet.html).
 
 ## Reference
 
 - Concept
+  - [Queues](https://www.rabbitmq.com/queues.html)
   - [Consumer Acknowledgements and Publisher Confirms](https://www.rabbitmq.com/confirms.html)
+  - Producer
+    - [Exchange types](https://www.rabbitmq.com/tutorials/amqp-concepts.html#exchanges)
   - Consumer
     - [Consumer Prefetch](https://www.rabbitmq.com/consumer-prefetch.html)
 - API Guide

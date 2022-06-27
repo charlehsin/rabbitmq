@@ -6,7 +6,7 @@ This is to let RabbitMQ handle TLS connection. **Warning!: To keep things simple
 
 1. Make sure that the RabbitMQ server is up and running. See [step 1 tutorial](../step1-install-server/README.md).
 2. Read through [TLS Support](https://www.rabbitmq.com/ssl.html) first.
-3. Check [How to: Create Temporary Certificates for Use During Development](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development) to create the dev certificates. **Warning!: The following certs and files are for dev/testing only and should not be used in production.**
+3. Check [How to: Create Temporary Certificates for Use During Development](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development) to create the dev certificates. **Warning!: The following certs and files are for dev/testing only and should not be used in production. Since the password for the pfx is exposed here, you should follow the steps here to create your own certs and files and use the included ones only as reference.**
    1. Use the included create-dev-certs.ps1 to create the 2 dev/testing certs.
    2. Go to Windows Certificate Store Local Computer \ Personal and export the "DevRootCA" cert without private key into a .p7b file. This file is included in .\certs folder here for reference.
    3. Go to Windows Certificate Store Local Computer \ Personal and export the "localhost" cert (issued by DevRootCA) with private key into a .pfx file. This file is included in .\certs folder here for reference. The password is P@ssw0rd.

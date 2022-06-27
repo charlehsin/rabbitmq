@@ -2,7 +2,6 @@
 
 ## Backlog items to explore
 
-- Use TLS
 - Authentication
 - Use Docker container for RabbitMQ server
 

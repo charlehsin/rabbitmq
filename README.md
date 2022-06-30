@@ -2,8 +2,10 @@
 
 ## Backlog items to explore
 
-- Authentication
+- Access control - username and password:  at [Authentication Mechanisms](https://www.rabbitmq.com/access-control.html#mechanisms)
+- Access control - cert
 - Use Docker container for RabbitMQ server
+- RabbitMQ clustering and peer discovery
 
 ## Reference
 

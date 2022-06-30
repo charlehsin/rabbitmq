@@ -1,4 +1,4 @@
-# Tutorial for access control
+# Tutorial for access control using username and password
 
 This is to let RabbitMQ handle ???.
 

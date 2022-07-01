@@ -1,6 +1,8 @@
 # Tutorial for using TLS
 
-This is to let RabbitMQ handle TLS connection. **Warning!: To keep things simple, we are not using peer verification in this tutorial.**
+This is to let RabbitMQ handle TLS connection.
+
+**Warning!: To keep things simple, we are not using peer verification in this tutorial.**
 
 ## RabbitMQ server
 
@@ -26,7 +28,7 @@ This is to let RabbitMQ handle TLS connection. **Warning!: To keep things simple
 ## RabbitMQ .NET client
 
 1. Install the target .NET SDK or Runtime from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0). After installation, run "dotnet --info" to verify.
-2. The codes in Receive folder and Send folder are based on the tutorial at step2-hello-world. Then they are modified based on [Using TLS in the .NET Client](https://www.rabbitmq.com/ssl.html#dotnet-client). The modifications are all the lines including "factory.Ssl".
+2. The codes in Receive folder and Send folder are based on the step2-hello-world. Then they are modified based on [Using TLS in the .NET Client](https://www.rabbitmq.com/ssl.html#dotnet-client). The modifications are all the lines including "factory.Ssl".
 3. Use 2 Git bashes to run the following commands at Receive folder and at Send folder. After the message is received, do not exit the program yet. Use [RabbitMQ Server management UI](http://localhost:15672/#/connections) to check that the 2 connections are all via TLS.
    - dotnet run
 

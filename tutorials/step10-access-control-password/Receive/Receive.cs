@@ -12,6 +12,23 @@ class Receive
         factory.Ssl.Enabled = true;
         factory.Ssl.ServerName = "localhost";
 
+        // Check the authentication mechanism
+        foreach (var auth in factory.AuthMechanisms)
+        {
+            Console.WriteLine($" Auth mechanism: {auth.Name}");
+        }
+
+        // Check some default authentication properties.
+        Console.WriteLine($" Default username: {factory.UserName}");
+        Console.WriteLine($" Default password: {factory.Password}");
+        Console.WriteLine($" Default virtual host: {factory.VirtualHost}");
+
+        // Set the new authentication username and password to use.
+        // Warning! The username and password exposed here are for demo and testing purpose only. Do not use it.
+        Console.WriteLine($" Setting new username and password...");
+        factory.UserName = "tester1";
+        factory.Password = "tester1234";
+
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
 

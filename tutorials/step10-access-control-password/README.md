@@ -5,6 +5,7 @@ This is to let RabbitMQ handle access control by using username and password. Th
 **Warning! The username and password exposed here and in the codes are for demo and testing purpose only. Do not use it.**
 
 1. At RabbitMQ server, make sure that the RabbitMQ server is up and running. See [step 1 tutorial](../step1-install-server/README.md).
+   - Follow [How to Find Config File Location](https://www.rabbitmq.com/configure.html#verify-configuration-config-file-location) to find out where is the config file path. Check RabbitMQ configuration rabbitmq.conf that the SSL is enabled but peer verification is disabled.
 2. Read through [Authentication, Authorisation, Access Control](https://www.rabbitmq.com/access-control.html) first.
 3. At RabbitMQ .NET client
    1. Install the target .NET SDK or Runtime from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0). After installation, run "dotnet --info" to verify.

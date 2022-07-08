@@ -3,6 +3,7 @@
 This is to deliver 1 message to multiple consumers by using Fanout exchange. Concept of "Exchange" is introduced at this tutorial.
 
 1. Make sure that the RabbitMQ server is up and running. See [step 1 tutorial](../step1-install-server/README.md).
+   - Follow [How to Find Config File Location](https://www.rabbitmq.com/configure.html#verify-configuration-config-file-location) to find out where is the config file path. Check RabbitMQ configuration rabbitmq.conf that the SSL is not enabled.
 2. Install the target .NET SDK or Runtime from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0). After installation, run "dotnet --info" to verify.
 3. Follow [Publish/Subscribe](https://www.rabbitmq.com/tutorials/tutorial-three-dotnet.html).
 

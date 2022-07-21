@@ -29,10 +29,11 @@ This is to let RabbitMQ handle access control by using username and password. Th
 6. At RabbitMQ server
    1. At RabbitMQ Command Prompt, run the following to remove the permission of user tester1 from virtual hots /.
       - rabbitmqctl clear_permissions -p "/" "tester1"
-5. At RabbitMQ .NET client
+7. At RabbitMQ .NET client
    1. Use 1 Git bash to run the following commands at Receive folder. It still show error about NOT_ALLOWED since the user does not have permission on the server side.
       - dotnet run
-   2. At RabbitMQ Command Prompt, run the following to delete the user tester1.
+8. At RabbitMQ server
+   1. At RabbitMQ Command Prompt, run the following to delete the user tester1.
       - rabbitmqctl delete_user tester1
 
 ## Reference

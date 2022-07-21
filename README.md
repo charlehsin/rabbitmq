@@ -2,7 +2,6 @@
 
 ## Backlog items to explore
 
-- Access control - cert
 - Use Docker container for RabbitMQ server
 - RabbitMQ clustering and peer discovery
 

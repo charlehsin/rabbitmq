@@ -22,7 +22,7 @@ This is to let RabbitMQ handle TLS connection with peer verification.
    - rabbitmq-diagnostics status
 6. At that config file location found in previous step, update (or create) the rabbitmq.conf file.
    - Use the included rabbitmq.conf file as reference.
-7. Since our RabbitMQ server is installed on Windows, restart RabbitMQ windows service to use the rabbitmq.confi file.
+7. Since our RabbitMQ server is installed on Windows, restart RabbitMQ windows service to use the rabbitmq.config file.
 8. After the service is restarted, follow [How to Verify that TLS is Enabled](https://www.rabbitmq.com/ssl.html#enabling-tls-verify-configuration) to run the following command in RabbitMQ Command Prompt to find out the new listeners. Verify that port 5671 is listed for TLS.
    - rabbitmq-diagnostics listeners
 

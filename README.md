@@ -2,7 +2,6 @@
 
 ## Backlog items to explore
 
-- Use Docker container for RabbitMQ server
 - RabbitMQ clustering and peer discovery
 
 ## Reference
